@@ -1,0 +1,32 @@
+
+# Environment configuration
+.env
+.env.*
+!.env.example
+
+# Database credentials - adjust to your actual paths
+config/db.php
+config/database.php
+
+# Dependencies
+/vendor/
+/node_modules/
+
+# Local development files
+.vscode/
+.idea/
+
+# Logs and temporary files
+*.log
+*.tmp
+/cache/
+/tmp/
+
+# Backups and database exports
+*.sql
+*.bak
+*.zip
+
+# Operating system
+.DS_Store
+Thumbs.db
