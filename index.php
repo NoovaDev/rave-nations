@@ -156,7 +156,7 @@ $events = [
             <a href="#events"
                class="rn-featured-explore-btn">
 
-                Explore Events
+                Explore EventS
 
                 <span aria-hidden="true">↗</span>
 
@@ -165,7 +165,7 @@ $events = [
         </div>
 
     </div>
-
+<!-- Rave Nations development version -->
 </section>
 
 <!-- END UPCOMING EVENT HERO -->
