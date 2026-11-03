@@ -1,0 +1,194 @@
+/* ==================================================
+   RAVE NATIONS - OFFICIAL FOOTER STYLES
+   ================================================== */
+
+.rn-footer {
+    padding: 80px 0 30px;
+    background: #101015;
+    color: #ffffff;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.rn-footer-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr 1fr 1.1fr;
+    gap: 45px;
+    padding-bottom: 60px;
+}
+
+/* LOGO & BRAND */
+
+.rn-footer-logo {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    text-decoration: none;
+}
+
+.rn-footer-logo span {
+    color: #b9a0f7;
+}
+
+.rn-footer-subbrand {
+    display: block;
+    margin-top: 4px;
+    color: #8c6bd5;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.rn-footer-desc {
+    margin-top: 18px;
+    color: #9a9ab0;
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+/* NAVIGATION & TITLES */
+
+.rn-footer-title {
+    margin: 0 0 22px 0;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.rn-footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.rn-footer-nav a {
+    color: #9a9ab0;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.rn-footer-nav a:hover {
+    color: #b9a0f7;
+    transform: translateX(4px);
+}
+
+/* HEADQUARTERS & DESK */
+
+.rn-footer-address {
+    color: #9a9ab0;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0 0 16px 0;
+}
+
+.rn-footer-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.rn-footer-contacts a {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.rn-footer-contacts a:hover {
+    color: #b9a0f7;
+}
+
+.rn-desk-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    background: rgba(46, 196, 182, 0.12);
+    border: 1px solid rgba(46, 196, 182, 0.3);
+    color: #2ec4b6;
+    font-size: 12px;
+    font-weight: 800;
+    border-radius: 20px;
+}
+
+/* NEWSLETTER FORM */
+
+.rn-footer-form {
+    display: flex;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.rn-footer-form input {
+    flex: 1;
+    background: #1c1c24;
+    border: 1px solid #2d2d3a;
+    border-radius: 8px;
+    padding: 12px 14px;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+}
+
+.rn-footer-form input:focus {
+    border-color: #b9a0f7;
+}
+
+.rn-footer-form button {
+    background: #b9a0f7;
+    color: #101015;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-family: inherit;
+    font-weight: 900;
+    font-size: 13px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.rn-footer-form button:hover {
+    background: #d0bfff;
+    transform: translateY(-2px);
+}
+
+/* FOOTER BOTTOM BAR */
+
+.rn-footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    color: #73738c;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* RESPONSIVE FOOTER */
+
+@media (max-width: 1024px) {
+    .rn-footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .rn-footer-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .rn-footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}

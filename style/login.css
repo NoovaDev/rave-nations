@@ -1,0 +1,155 @@
+/* ==================================================
+   RAVE NATIONS - LOGIN MODULE STYLES
+   THEME: CLEAN WHITE BASE WITH PURPLE ACCENTS
+   ================================================== */
+
+:root {
+    --login-bg: #f4f2fb;
+    --login-card-bg: #ffffff;
+    --login-border: #e2daf7;
+    --login-text-main: #111114;
+    --login-text-muted: #6b6b7a;
+    --login-purple: #8c6bd5;
+    --login-purple-light: #734cd2;
+    --login-purple-soft: #f0ebff;
+    --login-red: #e63946;
+}
+
+body.login-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--login-bg);
+    color: var(--login-text-main);
+    font-family: 'Titillium Web', sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.rn-login-container {
+    width: 100%;
+    max-width: 420px;
+}
+
+.rn-login-card {
+    background: var(--login-card-bg);
+    border: 1px solid var(--login-border);
+    border-radius: 20px;
+    padding: 40px 35px;
+    box-shadow: 0 20px 50px rgba(140, 107, 213, 0.12);
+}
+
+.rn-login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.rn-login-header h2 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    color: #111114;
+}
+
+.rn-login-header h2 span {
+    color: var(--login-purple);
+}
+
+.rn-login-header p {
+    color: var(--login-text-muted);
+    font-size: 14px;
+    margin-top: 6px;
+    font-weight: 600;
+}
+
+/* --- FORM FIELDS & INPUTS --- */
+.rn-login-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.rn-login-form label {
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--login-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.rn-login-form input {
+    background: #faf8ff;
+    border: 1px solid var(--login-border);
+    padding: 13px 16px;
+    border-radius: 10px;
+    color: var(--login-text-main);
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.rn-login-form input:focus {
+    background: #ffffff;
+    border-color: var(--login-purple);
+    box-shadow: 0 0 0 4px rgba(140, 107, 213, 0.15);
+}
+
+/* --- ALERTS & MESSAGES --- */
+.alert {
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-size: 13px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.alert-danger {
+    background: rgba(230, 57, 70, 0.1);
+    border: 1px solid rgba(230, 57, 70, 0.3);
+    color: var(--login-red);
+}
+
+/* --- BUTTONS & ACTIONS --- */
+.rn-login-btn {
+    width: 100%;
+    margin-top: 10px;
+    padding: 14px;
+    background: var(--login-purple);
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.rn-login-btn:hover {
+    background: var(--login-purple-light);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(140, 107, 213, 0.25);
+}
+
+.rn-login-footer-link {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+    color: var(--login-text-muted);
+}
+
+.rn-login-footer-link a {
+    color: var(--login-purple);
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.rn-login-footer-link a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,414 @@
+/* ==================================================
+   RAVE NATIONS - EVENT DETAILS PAGE & 3D TICKET CSS
+   ================================================== */
+
+body {
+    background-color: #ffffff;
+    color: #111114;
+    font-family: "Titillium Web", sans-serif;
+    margin: 0;
+}
+
+.rn-event-main-wrapper {
+    padding: 70px 0 120px;
+}
+
+.rn-back-action-wrap {
+    margin-bottom: 35px;
+}
+
+/* Back Button Light Mode Styling */
+.rn-back-action-wrap .rn-featured-explore-btn {
+    background: #f7f7f9 !important;
+    color: #111114 !important;
+    border: 1px solid #e9e9ee !important;
+}
+
+.rn-back-action-wrap .rn-featured-explore-btn:hover {
+    background: var(--home-purple-dark, #7237b6) !important;
+    color: #ffffff !important;
+}
+
+/* Immersive Grid Layout */
+.rn-event-hero-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+/* Poster Card Styling */
+.rn-detail-poster-glow {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #f7f7f9;
+    border: 1px solid #e9e9ee;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+}
+
+.rn-detail-poster-glow img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 620px;
+    object-fit: cover;
+}
+
+/* Event Titles & Labels */
+.rn-event-info-col .rn-section-label {
+    color: var(--home-purple-dark, #7237b6);
+}
+
+.rn-detail-title {
+    color: #111114 !important;
+}
+
+/* Event Metadata Banner */
+.rn-event-meta-banner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 25px 0;
+    padding: 20px;
+    background: #f7f7f9;
+    border: 1px solid #e9e9ee;
+    border-radius: 16px;
+}
+
+.rn-meta-info-block {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.rn-meta-icon {
+    font-size: 22px;
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    background: #f2ebff;
+    border-radius: 10px;
+    border: 1px solid rgba(114, 55, 182, 0.2);
+}
+
+.rn-meta-info-block small {
+    color: var(--home-text, #73737e) !important;
+}
+
+.rn-meta-info-block strong {
+    font-size: 15px;
+    color: #111114 !important;
+}
+
+.rn-event-synopsis {
+    margin-bottom: 35px;
+    padding: 24px;
+    background: #f7f7f9;
+    border-radius: 16px;
+    border: 1px solid #e9e9ee;
+}
+
+.rn-event-synopsis h3 {
+    color: #111114 !important;
+}
+
+.rn-event-synopsis p {
+    color: var(--home-text, #73737e) !important;
+}
+
+/* Packages Header */
+.rn-packages-header-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.rn-package-badge-count {
+    background: #f2ebff;
+    color: var(--home-purple-dark, #7237b6);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 800;
+    border: 1px solid rgba(114, 55, 182, 0.25);
+    letter-spacing: 1px;
+}
+
+/* Scrollable Viewport for 10+ Packages */
+.rn-packages-scroll-viewport {
+    max-height: 480px;
+    overflow-y: auto;
+    padding-right: 8px;
+}
+
+.rn-packages-scroll-viewport::-webkit-scrollbar {
+    width: 6px;
+}
+.rn-packages-scroll-viewport::-webkit-scrollbar-track {
+    background: #f7f7f9;
+    border-radius: 10px;
+}
+.rn-packages-scroll-viewport::-webkit-scrollbar-thumb {
+    background: var(--home-purple-dark, #7237b6);
+    border-radius: 10px;
+}
+
+/* Ticket Package Cards */
+.rn-packages-stack {
+    display: grid;
+    gap: 16px;
+}
+
+.rn-ticket-package-card {
+    background: #fdfdff;
+    border: 1px solid #e9e9ee;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+}
+
+.rn-ticket-package-card:hover {
+    border-color: var(--home-purple, #9353d3);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(114, 55, 182, 0.08);
+}
+
+.rn-ticket-pkg-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 6px;
+}
+
+.rn-pkg-number {
+    font-size: 10px;
+    font-weight: 900;
+    color: var(--home-purple-dark, #7237b6);
+    background: #f2ebff;
+    padding: 3px 8px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
+
+.rn-ticket-package-info h4 {
+    margin: 0;
+    font-size: 19px;
+    font-weight: 800;
+    color: #111114;
+}
+
+.rn-ticket-package-info p {
+    margin: 4px 0 0;
+    color: var(--home-text, #73737e);
+    font-size: 14.5px;
+    line-height: 1.5;
+}
+
+.rn-ticket-package-action {
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.rn-ticket-price-tag {
+    font-size: 21px;
+    font-weight: 900;
+    color: var(--home-purple-dark, #7237b6);
+    margin-bottom: 8px;
+}
+
+.rn-no-packages-box {
+    padding: 35px;
+    text-align: center;
+    background: #f7f7f9;
+    border-radius: 16px;
+    border: 1px solid #e9e9ee;
+}
+
+
+/* ==================================================
+   3D ANIMATED TICKET WAITING SCREEN MODAL STYLES
+   ================================================== */
+
+.rn-3d-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(16, 16, 21, 0.85);
+    backdrop-filter: blur(12px);
+    z-index: 9999;
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.rn-3d-modal-overlay.rn-modal-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.rn-3d-modal-content {
+    text-align: center;
+    color: #ffffff;
+    max-width: 400px;
+    width: 90%;
+}
+
+/* 3D Scene Perspective */
+.rn-3d-scene {
+    perspective: 1000px;
+    width: 100%;
+    height: 240px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 25px;
+}
+
+/* 3D Animated Floating Ticket Card */
+.rn-3d-ticket-card {
+    width: 320px;
+    height: 190px;
+    background: linear-gradient(135deg, #1e152d 0%, #101015 100%);
+    border: 2px solid rgba(147, 83, 211, 0.6);
+    border-radius: 16px;
+    padding: 22px;
+    box-shadow: 0 20px 50px rgba(114, 55, 182, 0.4), inset 0 0 20px rgba(147, 83, 211, 0.2);
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rnTicketFloat3D 3s ease-in-out infinite;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@keyframes rnTicketFloat3D {
+    0% {
+        transform: rotateX(15deg) rotateY(-20deg) translateY(0px);
+    }
+    50% {
+        transform: rotateX(-10deg) rotateY(20deg) translateY(-12px);
+    }
+    100% {
+        transform: rotateX(15deg) rotateY(-20deg) translateY(0px);
+    }
+}
+
+.rn-ticket-brand {
+    font-size: 11px;
+    font-weight: 900;
+    color: #bfa1ff;
+    letter-spacing: 2px;
+}
+
+.rn-ticket-event {
+    font-size: 17px;
+    font-weight: 800;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.rn-ticket-tier {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--home-purple, #9353d3);
+}
+
+.rn-ticket-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px dashed rgba(255, 255, 255, 0.15);
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+.rn-ticket-chip {
+    font-size: 10px;
+    background: rgba(147, 83, 211, 0.3);
+    color: #bfa1ff;
+    padding: 3px 8px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
+
+/* Loading Status Texts & Pulse */
+.rn-3d-loading-status h3 {
+    margin: 0 0 8px;
+    font-size: 22px;
+    font-weight: 900;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+.rn-3d-loading-status p {
+    margin: 0 0 20px;
+    font-size: 14px;
+    color: #b9b9c3;
+}
+
+.rn-pulse-loader {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    border: 3px solid rgba(147, 83, 211, 0.3);
+    border-top-color: var(--home-purple, #9353d3);
+    border-radius: 50%;
+    animation: rnSpinnerRotate 0.8s linear infinite;
+}
+
+@keyframes rnSpinnerRotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* ==========================================
+   RESPONSIVE MOBILE ADAPTATION
+   ========================================== */
+
+@media (max-width: 992px) {
+    .rn-event-hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .rn-detail-poster-glow {
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .rn-event-meta-banner {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .rn-ticket-package-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .rn-ticket-package-action {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
