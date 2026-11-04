@@ -41,13 +41,13 @@ function rnEscape(mixed $value): string
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- CSS Stylesheets -->
-    <link rel="stylesheet" href="style/navbar.css?v=66">
-    <link rel="stylesheet" href="style/style.css?v=66">
+    <link rel="stylesheet" href="style/navbar.css?v=75">
+    <link rel="stylesheet" href="style/style.css?v=75">
     <link rel="stylesheet" href="style/brand-ribbon.css?v=2.7">
-    <link rel="stylesheet" href="style/footer.css?v=66">
+    <link rel="stylesheet" href="style/footer.css?v=75">
 
     <!-- JavaScript Files -->
-    <script src="assets/js/navbar.js?v=66" defer></script>
+    <script src="assets/js/navbar.js?v=75" defer></script>
     <script src="assets/js/analytics.js" defer></script>
 </head>
 
@@ -78,7 +78,7 @@ function rnEscape(mixed $value): string
                         </p>
                         <div class="rn-hero-actions">
                             <a href="#events" class="rn-featured-explore-btn">Explore Events ↗</a>
-                            <a href="https://www.ticketsministry.com/concerts/blazing-abyss/6ac7895c772b1" target="_blank" rel="noopener noreferrer" class="rn-dark-button" style="margin-top: 0; background: var(--home-purple-dark); box-shadow: 0 0 20px rgba(114, 55, 182, 0.4);">
+                            <a href="https://www.ticketsministry.com/concerts/blazing-abyss/6ac7895c772b1" target="_blank" rel="noopener noreferrer" class="rn-dark-button phase2-btn-override">
                                 Phase 2 Tickets ↗
                             </a>
                         </div>
@@ -158,7 +158,7 @@ function rnEscape(mixed $value): string
             </div>
         </section>
 
-        <!-- Upcoming Events Section (Dynamic Database Integration) -->
+        <!-- Upcoming Events Section -->
         <section class="rn-section rn-events rn-fade-in" id="events">
             <div class="rn-container">
                 <div class="rn-section-header">
@@ -198,8 +198,10 @@ function rnEscape(mixed $value): string
                                     <p><?= rnEscape($event['location']) ?></p>
                                     <p><?= rnEscape(substr($event['description'], 0, 100)) ?>...</p>
                                 </div>
-                                <a href="event.php?id=<?= (int)$event['id'] ?>" class="rn-featured-explore-btn rn-event-btn">
-                                    Get Tickets ↗
+                               <a href="ticket.php" class="rn-featured-explore-btn rn-event-btn">
+                                    Get Tickets ↗ 
+                                 <!--<a href="event.php?id=<?= (int)$event['id'] ?>" class="rn-featured-explore-btn rn-event-btn">
+                                    Get Tickets ↗ -->
                                 </a>
                             </div>
                         </article>
@@ -215,7 +217,7 @@ function rnEscape(mixed $value): string
 
         <!-- Vision & Mission Section -->
         <section class="rn-section rn-about rn-fade-in" id="about">
-            <div class="rn-container" style="max-width: 900px; text-align: center;">
+            <div class="rn-container rn-about-container">
                 <span class="rn-section-label">CORE DIRECTIVE • VISION & MISSION</span>
                 <h2 class="rn-section-title" style="margin-bottom: 25px;">INNOVATING <span>THE INDUSTRY.</span></h2>
 
@@ -268,7 +270,7 @@ function rnEscape(mixed $value): string
             </div>
         </section>
 
-      <!-- Ticketing Preview Section (With 3D Interactive Ticket Component) -->
+        <!-- Ticketing Preview Section -->
         <section class="rn-section rn-ticketing rn-fade-in" id="platform">
             <div class="rn-container rn-ticket-grid">
                 <div class="rn-ticket-content">
@@ -285,7 +287,7 @@ function rnEscape(mixed $value): string
                     <a href="#events" class="rn-dark-button">Explore Events ↗</a>
                 </div>
 
-                <div class="rn-ticket-visual-container" style="display: flex; justify-content: center; align-items: center; perspective: 1200px;">
+                <div class="rn-ticket-visual-container">
                     <?php
                     if (file_exists(__DIR__ . '/includes/ticket-3d.php')) {
                         require_once __DIR__ . '/includes/ticket-3d.php';
@@ -295,15 +297,19 @@ function rnEscape(mixed $value): string
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section class="rn-section rn-contact rn-fade-in" id="contact">
-            <div class="rn-container rn-section-center">
-                <span class="rn-section-label">CONNECT WITH RAVE NATIONS</span>
-                <h2 class="rn-section-title">LET'S CREATE <span>MEMORIES.</span></h2>
-                <p class="rn-section-description">Contact Sri Lanka's premier music festival management company for event enquiries, brand collaborations, and upcoming experiences.</p>
-                <a href="mailto:info@ravenations.lk" class="rn-contact-button">Contact Rave Nations ↗</a>
-            </div>
-        </section>
+      <!-- Contact Section -->
+<section class="rn-section rn-contact rn-fade-in" id="contact">
+    <div class="rn-container rn-section-center">
+        <span class="rn-section-label">CONNECT WITH RAVE NATIONS</span>
+        <h2 class="rn-section-title">LET'S CREATE <span>MEMORIES.</span></h2>
+        <p class="rn-section-description">Contact Sri Lanka's premier music festival management company for event enquiries, brand collaborations, and upcoming experiences.</p>
+        
+        <!-- Updated mailto link with pre-filled subject line -->
+        <a href="mailto:info@ravenations.lk?subject=Event%20Enquiry%20-%20Rave%20Nations" class="rn-contact-button">
+            Contact Rave Nations ↗
+        </a>
+    </div>
+</section>
 
     </main>
 
