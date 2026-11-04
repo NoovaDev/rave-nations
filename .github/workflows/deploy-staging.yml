@@ -16,9 +16,10 @@ jobs:
       - name: 📂 Sync files using lftp
         run: |
           sudo apt-get update && sudo apt-get install -y lftp
-          lftp -f "
-          open ftp://${{ secrets.FTP_SERVER }}
-          user ${{ secrets.FTP_USERNAME }} ${{ secrets.FTP_PASSWORD }}
-          mirror --reverse --delete --exclude .git/ ./ /public_html/staging/
+          lftp -c "
+          set ssl:verify-certificate no;
+          open ftp://${{ secrets.FTP_SERVER }};
+          user ${{ secrets.FTP_USERNAME }} ${{ secrets.FTP_PASSWORD }};
+          mirror --reverse --delete --exclude .git/ ./ /public_html/staging/;
           bye
           "
