@@ -7,16 +7,18 @@ on:
 
 jobs:
   web-deploy:
-    name: 🎉 Deploying Staging Code
+    name: 🎉 Deploying Staging Code via FTP
     runs-on: ubuntu-latest
     steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v3
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v3
 
-    - name: 📂 Sync files via FTP
-      uses: SamKirkles/ftp-deploy@v4.3.5
-      with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: /
+      - name: 📂 Sync files using lftp
+        run: |
+          sudo apt-get update && sudo apt-get install -y lftp
+          lftp -f "
+          open ftp://${{ secrets.FTP_SERVER }}
+          user ${{ secrets.FTP_USERNAME }} ${{ secrets.FTP_PASSWORD }}
+          mirror --reverse --delete --exclude .git/ ./ /public_html/staging/
+          bye
+          "
