@@ -1,0 +1,118 @@
+/* ==================================================
+   RAVE NATIONS - DEDICATED EVENTS & PACKAGE STYLES
+   ================================================== */
+
+/* TABLE ENHANCEMENTS */
+.rn-table td img {
+    border-radius: 8px;
+    object-fit: cover;
+    border: 1px solid var(--admin-border, #f1f5f9);
+}
+
+.rn-btn-secondary {
+    background: var(--admin-bg, #f8fafc);
+    color: var(--admin-text-main, #0f172a);
+    border: 1px solid var(--admin-border, #f1f5f9);
+    padding: 8px 14px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 13px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s ease;
+}
+
+.rn-btn-secondary:hover {
+    background: rgba(124, 58, 237, 0.08);
+    border-color: var(--admin-purple, #7c3aed);
+    color: var(--admin-purple, #7c3aed);
+}
+
+/* PACKAGE CARDS IN MANAGE MODAL */
+.pkg-card-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: 280px;
+    overflow-y: auto;
+    padding-right: 4px;
+}
+
+.pkg-card {
+    background: var(--admin-bg, #f8fafc);
+    border: 1px solid var(--admin-border, #f1f5f9);
+    border-radius: 14px;
+    padding: 14px 18px;
+    transition: all 0.2s ease;
+}
+
+.pkg-card:hover {
+    border-color: rgba(124, 58, 237, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.pkg-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.pkg-card-title {
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--admin-text-main, #0f172a);
+}
+
+.pkg-card-price {
+    font-size: 15px;
+    font-weight: 900;
+    color: var(--admin-purple, #7c3aed);
+    background: rgba(124, 58, 237, 0.08);
+    padding: 4px 10px;
+    border-radius: 8px;
+}
+
+.pkg-card-benefits {
+    font-size: 12px;
+    color: var(--admin-text-muted, #64748b);
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.pkg-card-actions {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+    border-top: 1px dashed var(--admin-border, #e2e8f0);
+    padding-top: 8px;
+}
+
+.btn-pkg-action {
+    background: transparent;
+    border: none;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.btn-pkg-edit {
+    color: var(--admin-purple, #7c3aed);
+}
+
+.btn-pkg-edit:hover {
+    background: rgba(124, 58, 237, 0.1);
+}
+
+.btn-pkg-delete {
+    color: #ef4444;
+}
+
+.btn-pkg-delete:hover {
+    background: rgba(239, 68, 68, 0.1);
+}

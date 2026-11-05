@@ -1,4 +1,3 @@
-
 <?php
 /* ==========================================
    RAVE NATIONS - NAVBAR COMPONENT
@@ -15,11 +14,12 @@
             <div class="rn-nav-spacer"
                  aria-hidden="true"></div>
 
-            <!-- LOGO -->
+            <!-- LOGO WITH COMPANY IMAGE -->
             <a href="/rave/"
                class="rn-brand"
                aria-label="Rave Nations Homepage">
-                RAVE<span>NATIONS</span>
+                <img src="/rave/assets/design/logo.png" alt="Rave Nations Logo" class="rn-logo-img">
+                <span class="rn-brand-text">RAVE<span>NATIONS</span></span>
             </a>
 
             <!-- DESKTOP BUTTONS -->
@@ -37,9 +37,10 @@
 
             </div>
 
-            <!-- MOBILE MENU BUTTON -->
+            <!-- MOBILE MENU BUTTON (Added id="rn-menu-button" for JS targeting) -->
             <button
                 class="rn-menu-button"
+                id="rn-menu-button"
                 type="button"
                 aria-label="Open navigation menu"
                 aria-controls="rn-navigation"

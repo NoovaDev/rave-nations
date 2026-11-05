@@ -1,0 +1,115 @@
+/* ==================================================
+   RAVE NATIONS - PURPLE & WHITE FLOATING NAVBAR STYLES
+   ================================================== */
+
+:root {
+    --admin-purple: #7c3aed;
+    --admin-purple-bg: rgba(124, 58, 237, 0.12);
+    --admin-card-bg: #ffffff;
+    --admin-border: #f1f5f9;
+    --admin-text-muted: #64748b;
+}
+
+/* FLOATING SIDEBAR CONTAINER */
+.rn-admin-sidebar {
+    width: 88px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 12px;
+    box-sizing: border-box;
+    gap: 16px;
+}
+
+/* PILL GROUPS (Matches reference design container blocks) */
+.rn-sidebar-section.pill-group {
+    background: var(--admin-card-bg);
+    border: 1px solid var(--admin-border);
+    border-radius: 24px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+/* BRAND LOGO PILL (Purple Theme) */
+.brand-pill {
+    width: 48px;
+    height: 48px;
+    background: var(--admin-purple) !important;
+    color: #fff !important;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 16px;
+    text-decoration: none;
+    box-shadow: 0 6px 16px rgba(124, 58, 237, 0.3);
+    overflow: hidden;
+}
+
+.brand-logo-img {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+}
+
+/* NAVIGATION ICON ITEMS */
+.rn-nav-item {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--admin-text-muted);
+    text-decoration: none;
+    border-radius: 16px;
+    transition: all 0.2s ease;
+}
+
+.rn-nav-item:hover,
+.rn-nav-item.active {
+    background: var(--admin-purple-bg);
+}
+
+/* PNG ICON STYLES & PURPLE COLOR FILTER */
+.nav-icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    display: block;
+    opacity: 0.55;
+    transition: all 0.2s ease;
+}
+
+.rn-nav-item:hover .nav-icon,
+.rn-nav-item.active .nav-icon {
+    opacity: 1;
+    filter: brightness(0) saturate(100%) invert(29%) sepia(85%) saturate(2758%) hue-rotate(248deg) brightness(94%) contrast(97%);
+}
+
+.logout-icon:hover {
+    background: rgba(239, 68, 68, 0.1);
+}
+
+.logout-icon:hover .nav-icon {
+    filter: brightness(0) saturate(100%) invert(37%) sepia(93%) saturate(3483%) hue-rotate(342deg) brightness(98%) contrast(91%);
+}
+
+/* USER AVATAR PILL */
+.rn-sidebar-avatar {
+    width: 44px;
+    height: 44px;
+    background: #0f172a;
+    color: #fff;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 13px;
+    margin-top: 4px;
+}

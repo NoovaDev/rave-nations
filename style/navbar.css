@@ -1,4 +1,3 @@
-
 /* ==========================================
    RAVE NATIONS NAVBAR
    FONT: TITILLIUM WEB
@@ -9,15 +8,15 @@
 :root {
     --rn-font: "Titillium Web", sans-serif;
 
-    --rn-accent: #b9a0f7;
-    --rn-accent-hover: #d0bfff;
+    --rn-accent: #7237b6;
+    --rn-accent-hover: #5d2b96;
 
     --rn-black: #111114;
     --rn-white: #ffffff;
 
     --rn-text: #222229;
 
-    --rn-glass: rgba(247, 247, 250, 0.78);
+    --rn-glass: rgba(247, 247, 250, 0.82);
 
     --rn-border: rgba(255, 255, 255, 0.45);
 }
@@ -42,81 +41,91 @@ body {
 /* NAVBAR WRAPPER */
 
 .rn-header {
-    position: relative;
-    z-index: 1000;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
+    z-index: 9999;
     padding: 0 20px;
-    font-family: var(--rn-font);
+    background: transparent !important;
+    box-shadow: none !important;
 }
 
 /* GLASS NAVBAR */
 
-.rn-nav-shell {
+.rn-header .rn-nav-shell {
     position: relative;
-    width: min(100%, 1120px);
+    /* Aligned precisely to match index container width matching your guideline */
+    width: min(1240px, calc(100% - 100px));
     margin: 0 auto;
 
-    background: var(--rn-glass);
+    background: rgba(255, 255, 255, 0.72) !important;
 
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
 
-    border: 1px solid var(--rn-border);
+    border: 1px solid rgba(255, 255, 255, 0.45);
     border-top: none;
 
-    border-radius: 0 0 16px 16px;
+    border-radius: 0 0 14px 14px;
 
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+    transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* FIRST ROW */
+/* SCROLLED STATE */
+
+.rn-header.is-scrolled .rn-nav-shell {
+    background: rgba(255, 255, 255, 0.9) !important;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* FIRST ROW (SLIMMER HEIGHT) */
 
 .rn-nav-top {
     display: grid;
-
-    grid-template-columns:
-        minmax(0, 1fr)
-        auto
-        minmax(0, 1fr);
-
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
     align-items: center;
-
-    gap: 16px;
-    min-height: 64px;
-
-    padding: 9px 20px;
+    gap: 12px;
+    min-height: 54px;
+    padding: 6px 18px;
 }
 
 .rn-nav-spacer {
     min-width: 0;
 }
 
-/* LOGO */
+/* LOGO & BRAND IMAGE STYLING */
 
 .rn-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     justify-self: center;
-
     color: var(--rn-black);
-
     font-family: var(--rn-font);
-
-    font-size: 33px;
+    font-size: 26px;
     font-weight: 900;
-
-    letter-spacing: -1.5px;
+    letter-spacing: -1px;
     line-height: 1;
-
     text-decoration: none;
     white-space: nowrap;
-
     transition: transform 0.25s ease;
 }
 
 .rn-brand:hover {
-    transform: scale(1.03);
+    transform: scale(1.02);
 }
 
-.rn-brand span {
+.rn-logo-img {
+    height: 32px;
+    width: auto;
+    object-fit: contain;
+}
+
+.rn-brand-text span {
     color: var(--rn-accent);
 }
 
@@ -126,7 +135,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 9px;
+    gap: 8px;
 }
 
 .rn-nav-button {
@@ -134,21 +143,19 @@ body {
     justify-content: center;
     align-items: center;
 
-    min-height: 38px;
-    padding: 9px 18px;
+    min-height: 34px;
+    padding: 7px 15px;
 
-    border-radius: 8px;
+    border-radius: 7px;
 
     font-family: var(--rn-font);
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
 
     text-decoration: none;
     white-space: nowrap;
 
-    transition:
-        background 0.2s ease,
-        transform 0.2s ease;
+    transition: background 0.2s ease, transform 0.2s ease;
 }
 
 .rn-nav-button:hover {
@@ -170,7 +177,7 @@ body {
 
 .rn-button-purple {
     background: var(--rn-accent);
-    color: var(--rn-black);
+    color: var(--rn-white);
 }
 
 .rn-button-purple:hover {
@@ -181,37 +188,32 @@ body {
 
 .rn-nav-divider {
     height: 1px;
-    margin: 0 20px;
-
-    background: rgba(20, 20, 25, 0.12);
+    margin: 0 18px;
+    background: rgba(20, 20, 25, 0.08);
 }
 
-/* SECOND ROW */
+/* SECOND ROW (SLIMMER PADDING) */
 
 .rn-navigation {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    gap: 34px;
-    padding: 12px 20px 14px;
+    gap: 28px;
+    padding: 8px 18px 10px;
 }
 
 .rn-navigation > a {
     color: var(--rn-text);
-
     font-family: var(--rn-font);
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 600;
-
     text-decoration: none;
-
     transition: color 0.2s ease;
 }
 
 .rn-navigation > a:hover,
 .rn-navigation > a.rn-active {
-    color: #7656bd;
+    color: var(--rn-accent);
 }
 
 /* HIDE MOBILE ELEMENTS ON DESKTOP */
@@ -221,21 +223,28 @@ body {
     display: none;
 }
 
+:root {
+    --rn-fixed-nav-height: 100px;
+}
+
 /* ==========================================
-   TABLET AND MOBILE
+   TABLET AND MOBILE BREAKPOINTS
    ========================================== */
 
 @media (max-width: 900px) {
 
+    :root {
+        --rn-fixed-nav-height: 75px;
+    }
+
     .rn-header {
-        padding: 0 12px;
+        padding: 0 10px;
     }
 
     .rn-nav-top {
         grid-template-columns: 1fr auto;
-
-        min-height: 68px;
-        padding: 10px 16px;
+        min-height: 56px;
+        padding: 8px 14px;
     }
 
     .rn-nav-spacer,
@@ -246,7 +255,11 @@ body {
 
     .rn-brand {
         justify-self: start;
-        font-size: 27px;
+        font-size: 22px;
+    }
+
+    .rn-logo-img {
+        height: 26px;
     }
 
     /* HAMBURGER BUTTON */
@@ -254,43 +267,31 @@ body {
     .rn-menu-button {
         display: flex;
         flex-direction: column;
-
         justify-content: center;
         align-items: center;
-
-        gap: 5px;
-
-        width: 42px;
-        height: 42px;
-
+        gap: 4px;
+        width: 36px;
+        height: 36px;
         padding: 0;
-
-        background: rgba(255, 255, 255, 0.8);
-
+        background: rgba(255, 255, 255, 0.9);
         border: 1px solid rgba(0, 0, 0, 0.12);
-        border-radius: 8px;
-
+        border-radius: 7px;
         cursor: pointer;
     }
 
     .rn-menu-button span {
         display: block;
-
-        width: 20px;
+        width: 18px;
         height: 2px;
-
         background: var(--rn-black);
         border-radius: 2px;
-
-        transition:
-            transform 0.25s ease,
-            opacity 0.25s ease;
+        transition: transform 0.25s ease, opacity 0.25s ease;
     }
 
     /* HAMBURGER ANIMATION */
 
     .rn-menu-button.is-open span:first-child {
-        transform: translateY(7px) rotate(45deg);
+        transform: translateY(6px) rotate(45deg);
     }
 
     .rn-menu-button.is-open span:nth-child(2) {
@@ -298,47 +299,39 @@ body {
     }
 
     .rn-menu-button.is-open span:last-child {
-        transform: translateY(-7px) rotate(-45deg);
+        transform: translateY(-6px) rotate(-45deg);
     }
 
     /* MOBILE DROPDOWN */
 
     .rn-navigation {
         display: none;
-
         position: absolute;
-        top: calc(100% + 6px);
-
+        top: calc(100% + 4px);
         left: 0;
         right: 0;
-
         flex-direction: column;
         align-items: stretch;
-
         gap: 0;
-        padding: 12px 18px 18px;
-
-        background: rgba(248, 248, 251, 0.97);
-
+        padding: 10px 16px 14px;
+        background: rgba(248, 248, 251, 0.98);
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
-
         border: 1px solid rgba(0, 0, 0, 0.08);
         border-radius: 12px;
-
         box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+        z-index: 10;
     }
 
+    /* Force display flex when active class is applied by JS */
     .rn-navigation.is-open {
-        display: flex;
+        display: flex !important;
     }
 
     .rn-navigation > a {
-        padding: 14px 8px;
-
-        border-bottom: 1px solid rgba(0, 0, 0, 0.07);
-
-        font-size: 16px;
+        padding: 12px 6px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+        font-size: 15px;
     }
 
     /* MOBILE BUTTONS */
@@ -346,13 +339,13 @@ body {
     .rn-mobile-actions {
         display: grid;
         grid-template-columns: 1fr 1fr;
-
-        gap: 9px;
-        margin-top: 15px;
+        gap: 8px;
+        margin-top: 12px;
     }
 
     .rn-mobile-actions .rn-nav-button {
-        padding: 12px 10px;
+        padding: 10px 8px;
+        font-size: 13px;
     }
 }
 
@@ -363,11 +356,19 @@ body {
 @media (max-width: 480px) {
 
     .rn-header {
-        padding: 0 8px;
+        padding: 0 6px;
     }
 
     .rn-brand {
-        font-size: 24px;
+        font-size: 20px;
+    }
+
+    .rn-logo-img {
+        height: 24px;
+    }
+
+    .rn-header .rn-nav-shell {
+        border-radius: 0 0 10px 10px;
     }
 
     .rn-mobile-actions {
@@ -375,115 +376,18 @@ body {
     }
 }
 
-/* ACCESSIBILITY */
+/* ACCESSIBILITY & REDUCED MOTION */
 
 .rn-header a:focus-visible,
 .rn-header button:focus-visible {
     outline: 3px solid var(--rn-accent);
-    outline-offset: 3px;
+    outline-offset: 2px;
 }
 
 @media (prefers-reduced-motion: reduce) {
-
-    html {
-        scroll-behavior: auto;
-    }
-
     .rn-header *,
     .rn-header *::before,
     .rn-header *::after {
         transition: none !important;
-    }
-}
-
-/* =====================================================
-   RAVE NATIONS - FIXED TRANSPARENT GLASS NAVBAR
-   ===================================================== */
-
-:root {
-    --rn-fixed-nav-height: 125px;
-}
-
-/* FIXED HEADER */
-
-.rn-header {
-    position: fixed !important;
-    top: 0;
-    left: 0;
-    right: 0;
-
-    width: 100%;
-    z-index: 9999;
-
-    padding: 0 20px;
-
-    background: transparent !important;
-    box-shadow: none !important;
-
-    box-sizing: border-box;
-}
-
-/* GLASS NAVIGATION CONTAINER */
-
-.rn-header .rn-nav-shell {
-    position: relative;
-
-    width: min(100%, 1120px);
-    margin: 0 auto;
-
-    background: rgba(255, 255, 255, 0.68) !important;
-
-    -webkit-backdrop-filter: blur(18px);
-    backdrop-filter: blur(18px);
-
-    border: 1px solid rgba(255, 255, 255, 0.45);
-    border-top: none;
-
-    border-radius: 0 0 16px 16px;
-
-    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
-
-    transition:
-        background 0.3s ease,
-        box-shadow 0.3s ease;
-}
-
-/* SCROLLED STATE */
-
-.rn-header.is-scrolled .rn-nav-shell {
-    background: rgba(255, 255, 255, 0.85) !important;
-
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
-}
-
-/* KEEP MOBILE MENU ABOVE CONTENT */
-
-.rn-header .rn-navigation {
-    z-index: 10;
-}
-
-/* TABLET */
-
-@media (max-width: 900px) {
-
-    :root {
-        --rn-fixed-nav-height: 90px;
-    }
-
-    .rn-header {
-        padding: 0 12px;
-    }
-}
-
-/* MOBILE */
-
-@media (max-width: 480px) {
-
-    .rn-header {
-        padding: 0 8px;
-    }
-
-    .rn-header .rn-nav-shell {
-        border-radius: 0 0 12px 12px;
     }
 }
