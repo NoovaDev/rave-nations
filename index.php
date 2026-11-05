@@ -198,10 +198,10 @@ function rnEscape(mixed $value): string
                                     <p><?= rnEscape($event['location']) ?></p>
                                     <p><?= rnEscape(substr($event['description'], 0, 100)) ?>...</p>
                                 </div>
-                               <a href="ticket.php" class="rn-featured-explore-btn rn-event-btn">
-                                    Get Tickets ↗ 
-                                 <!--<a href="event.php?id=<?= (int)$event['id'] ?>" class="rn-featured-explore-btn rn-event-btn">
+                               <!--<a href="ticket.php" class="rn-featured-explore-btn rn-event-btn">
                                     Get Tickets ↗ -->
+                                 <a href="event.php?id=<?= (int)$event['id'] ?>" class="rn-featured-explore-btn rn-event-btn">
+                                    Get Tickets ↗ 
                                 </a>
                             </div>
                         </article>

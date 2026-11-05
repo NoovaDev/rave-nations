@@ -30,3 +30,5 @@ config/database.php
 # Operating system
 .DS_Store
 Thumbs.db
+
+config/payhere.php
