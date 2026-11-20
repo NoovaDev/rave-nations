@@ -1,0 +1,625 @@
+/* ================================================================= */
+/* Rave Nations Analytics & Bordered Table Styles                    */
+/* ================================================================= */
+
+.subtitle {
+    font-size: 13px;
+    color: #64748b;
+    margin-top: 2px;
+}
+
+.rn-alert-error {
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+    padding: 12px 18px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Clear Bordered Table Structure */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 12px;
+}
+
+.rn-bordered-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.rn-bordered-table th, 
+.rn-bordered-table td {
+    padding: 12px 14px;
+    text-align: left;
+    border: 1px solid #cbd5e1; /* Clear distinct borders */
+    font-size: 13px;
+    color: #1e293b;
+    vertical-align: middle;
+}
+
+.rn-bordered-table th {
+    background: #f1f5f9;
+    font-weight: 800;
+    color: #0f172a;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 11px;
+}
+
+.rn-bordered-table tr:hover {
+    background: #f8fafc;
+}
+
+/* Package Badge Styling */
+.package-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    background: rgba(124, 58, 237, 0.1);
+    color: #6d28d9;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+/* Status Pills */
+.status-pill {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    text-align: center;
+}
+
+.status-completed {
+    background: rgba(16, 185, 129, 0.14);
+    color: #059669;
+}
+
+.status-pending {
+    background: rgba(245, 158, 11, 0.14);
+    color: #d97706;
+}
+
+.status-failed, .status-cancelled {
+    background: rgba(239, 68, 68, 0.14);
+    color: #dc2626;
+}
+
+/* ================================================================= */
+/* Rave Nations Analytics & Bordered Table Styles                    */
+/* ================================================================= */
+
+.subtitle {
+    font-size: 13px;
+    color: #64748b;
+    margin-top: 2px;
+}
+
+.rn-alert-error {
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+    padding: 12px 18px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.rn-alert-success {
+    background: rgba(16, 185, 129, 0.12);
+    color: #047857;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    padding: 12px 18px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Filter Card */
+.rn-filter-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.filter-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.2fr;
+    gap: 12px;
+    align-items: end;
+}
+
+.filter-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.filter-field label {
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: #475569;
+}
+
+.rn-filter-control {
+    height: 38px;
+    padding: 0 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 13px;
+    color: #0f172a;
+    background: #ffffff;
+}
+
+.rn-filter-control:focus {
+    outline: none;
+    border-color: #7c3aed;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.12);
+}
+
+.filter-footer {
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px dashed #e2e8f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.visible-count-text {
+    font-size: 12px;
+    font-weight: 700;
+    color: #475569;
+}
+
+.rn-btn-reset {
+    padding: 6px 14px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    background: #f8fafc;
+    color: #1e293b;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.rn-btn-reset:hover {
+    background: #f1f5f9;
+}
+
+/* Clear Bordered Table Structure */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 12px;
+}
+
+.rn-bordered-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.rn-bordered-table th,
+.rn-bordered-table td {
+    padding: 12px 14px;
+    text-align: left;
+    border: 1px solid #cbd5e1;
+    font-size: 13px;
+    color: #1e293b;
+    vertical-align: middle;
+}
+
+.rn-bordered-table th {
+    background: #f1f5f9;
+    font-weight: 800;
+    color: #0f172a;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 11px;
+}
+
+.rn-bordered-table tr:hover {
+    background: #f8fafc;
+}
+
+/* Package Badge Styling */
+.package-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    background: rgba(124, 58, 237, 0.1);
+    color: #6d28d9;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+/* Status Pills */
+.status-pill {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    text-align: center;
+}
+
+.status-completed {
+    background: rgba(16, 185, 129, 0.14);
+    color: #059669;
+}
+
+.status-pending {
+    background: rgba(245, 158, 11, 0.14);
+    color: #d97706;
+}
+
+.status-inquiry {
+    background: rgba(59, 130, 246, 0.14);
+    color: #1d4ed8;
+}
+
+.status-refunded {
+    background: rgba(124, 58, 237, 0.14);
+    color: #6d28d9;
+}
+
+.status-failed,
+.status-cancelled {
+    background: rgba(239, 68, 68, 0.14);
+    color: #dc2626;
+}
+
+/* Inline Status Update Controls */
+.status-update-form {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.rn-status-select {
+    height: 32px;
+    padding: 0 8px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #0f172a;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.rn-btn-save-status {
+    height: 32px;
+    padding: 0 11px;
+    border: none;
+    border-radius: 6px;
+    background: #6d28d9;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.rn-btn-save-status:hover {
+    background: #5b21b6;
+}
+
+@media (max-width: 900px) {
+    .filter-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .filter-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ================================================================= */
+/* Rave Nations Analytics & Bordered Table Styles                    */
+/* ================================================================= */
+
+.subtitle {
+    font-size: 13px;
+    color: #64748b;
+    margin-top: 2px;
+}
+
+.stat-sub {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #64748b;
+    font-weight: 600;
+}
+
+.rn-alert-error {
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+    padding: 12px 18px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.rn-alert-success {
+    background: rgba(16, 185, 129, 0.12);
+    color: #047857;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    padding: 12px 18px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.rn-btn-export {
+    height: 38px;
+    padding: 0 16px;
+    border-radius: 8px;
+    border: 1px solid #6d28d9;
+    background: #6d28d9;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.rn-btn-export:hover {
+    background: #5b21b6;
+}
+
+/* Filter Card */
+.rn-filter-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.filter-grid {
+    display: grid;
+    grid-template-columns: 2fr repeat(4, minmax(135px, 1fr));
+    gap: 12px;
+    align-items: end;
+}
+
+.filter-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.filter-field label {
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: #475569;
+}
+
+.rn-filter-control {
+    height: 38px;
+    padding: 0 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 13px;
+    color: #0f172a;
+    background: #ffffff;
+}
+
+.rn-filter-control:focus {
+    outline: none;
+    border-color: #7c3aed;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.12);
+}
+
+.filter-footer {
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px dashed #e2e8f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.visible-count-text {
+    font-size: 12px;
+    font-weight: 700;
+    color: #475569;
+}
+
+.rn-btn-reset {
+    padding: 6px 14px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    background: #f8fafc;
+    color: #1e293b;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.rn-btn-reset:hover {
+    background: #f1f5f9;
+}
+
+/* Clear Bordered Table Structure */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 12px;
+}
+
+.rn-bordered-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.rn-bordered-table th,
+.rn-bordered-table td {
+    padding: 12px 14px;
+    text-align: left;
+    border: 1px solid #cbd5e1;
+    font-size: 13px;
+    color: #1e293b;
+    vertical-align: middle;
+}
+
+.rn-bordered-table th {
+    background: #f1f5f9;
+    font-weight: 800;
+    color: #0f172a;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 11px;
+}
+
+.rn-bordered-table tr:hover {
+    background: #f8fafc;
+}
+
+.event-sub-name {
+    font-size: 11px;
+    font-weight: 700;
+    color: #475569;
+    margin-bottom: 4px;
+}
+
+.addon-note {
+    margin-top: 5px;
+    font-size: 11px;
+    color: #64748b;
+}
+
+/* Package Badge Styling */
+.package-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    background: rgba(124, 58, 237, 0.1);
+    color: #6d28d9;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+/* Status Pills */
+.status-pill {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    text-align: center;
+}
+
+.status-completed {
+    background: rgba(16, 185, 129, 0.14);
+    color: #059669;
+}
+
+.status-pending {
+    background: rgba(245, 158, 11, 0.14);
+    color: #d97706;
+}
+
+.status-inquiry {
+    background: rgba(59, 130, 246, 0.14);
+    color: #1d4ed8;
+}
+
+.status-refunded {
+    background: rgba(124, 58, 237, 0.14);
+    color: #6d28d9;
+}
+
+.status-failed,
+.status-cancelled {
+    background: rgba(239, 68, 68, 0.14);
+    color: #dc2626;
+}
+
+/* Inline Status Update Controls */
+.status-update-form {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.rn-status-select {
+    height: 32px;
+    padding: 0 8px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #0f172a;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.rn-btn-save-status {
+    height: 32px;
+    padding: 0 11px;
+    border: none;
+    border-radius: 6px;
+    background: #6d28d9;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.rn-btn-save-status:hover {
+    background: #5b21b6;
+}
+
+@media (max-width: 1100px) {
+    .filter-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .filter-grid {
+        grid-template-columns: 1fr;
+    }
+}

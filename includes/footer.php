@@ -28,6 +28,11 @@
                     <a href="https://www.tiktok.com/@ravenationshq?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
                         <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg>
                     </a>
+                    <a href="https://www.youtube.com/@RaveNationsMidnight" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                         <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                             <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.2 3.6-6.2 3.6Z"/>
+</svg>
+</a>
                 </div>
             </div>
 
@@ -53,7 +58,7 @@
 
                 <div class="rn-footer-contacts">
                     <a href="mailto:support@ravenations.lk">support@ravenations.lk</a>
-                    <a href="tel:0412238497">0412238497</a>
+                    <a href="tel:+94 74 268 7787">+94 74 268 7787</a>
                 </div>
             </div>
 
